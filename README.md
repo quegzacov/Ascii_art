@@ -1,6 +1,3 @@
-# Ascii_art
-It is a simple library to make your programs prettier.
-
 # Operation
 
 There is in fact one important fonction called `write`. **IMPORTANT**, put `alphabet.txt` and `ascii_art.py` in the same repoertory or change this in the file.
