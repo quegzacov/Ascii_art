@@ -1,17 +1,14 @@
-"""package permettant l'écriture de chaine de caractères en ascii art"""
-
-
-def open_letter(lettre):
-    """demande une lettre en str et renvoie dans une liste le caractère en ascii art"""
+def open_letter(caracter):
+    """takes a str caracter and returns an array with all the characters to create the letter in ascii art"""
     open_file = open(("alphabet.txt"), "r")
     read_file = open_file.read()
     alphabet = list(read_file.split(","))
-    sorti = list(alphabet[corespondance[lettre]].split('\n'))
+    sorti = list(alphabet[corespondance[caracter]].split('\n'))
     return sorti
 
 
 def write(message):
-    """prend une chaine de caractères et la print en ascii art"""
+    """Takes a string and returns this in ascii art"""
     epelle = list(message)
     mot = 0
     temp_mot = 0
@@ -25,7 +22,7 @@ def write(message):
 
 
 def affiche(message):
-    """affiche une lettre ascii art à partir d'une liste"""
+    """print the argument"""
     for i in message:
         print(i)
 
@@ -100,5 +97,3 @@ corespondance = {
     ',':65,
     '.':66,
 }
-
-write('3.14')
